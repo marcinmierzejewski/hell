@@ -1,0 +1,40 @@
+body {
+  color: $color-main;
+  font-family: $font;
+  font-size: $f16;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  // transition: color $animation;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    // color: $color-decoration;
+  }
+}

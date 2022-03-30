@@ -1,0 +1,9 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &_header {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+}

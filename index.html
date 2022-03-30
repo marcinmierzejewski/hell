@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>HellEN</title>
+  </head>
+  <body>
+    <header class="section section_header">
+      <div class="container container_header">
+        <a href="index.html"
+          ><img src="images/main-logo.svg" alt="main-logo"
+        /></a>
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section class="section section_hero">
+      <div class="container container_hero">
+        <div class="hero">
+          <div class="hero__left">
+            <h1 class="hero__title">Complex preparation for English UPE</h1>
+            <ul class="hero__list">
+              <li class="hero__item">It won’t be easy.</li>
+              <li class="hero__item">But you’re guaranteed to get</li>
+              <li class="hero__item">+25 points</li>
+            </ul>
+            <button class="hero__btn">i want a free lesson</button>
+          </div>
+          <div class="hero__right">
+            <picture class="hero__picture">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/hero-desktop.png    1x,
+                  ./images/header/hero-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/header/hero-tablet.png    1x,
+                  ./images/header/hero-tablet@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./images/header/hero-mobile.png    1x,
+                  ./images/header/hero-mobile@2x.png 2x
+                "
+              />
+              <img src="./images/header/hero-desktop.png" alt="hero picture" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
