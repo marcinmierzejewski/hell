@@ -25,13 +25,34 @@
     <header class="section section_header">
       <div class="container container_header">
         <a href="index.html"
-          ><img src="images/main-logo.svg" alt="main-logo"
-        /></a>
-        <button type="button" class="burger-btn" data-menu-open>
-          <svg class="burger-btn__icon">
-            <use href="images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
+          >
+          <picture>
+            <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/main-logo-big.svg
+                "
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./images/main-logo.svg
+                "
+              />
+              <img src="./images/main-logo.svg" alt="main logo" />
+          </picture>
+          </a>
+        <div class="btn-div">
+          <button class="consultation-btn">
+            consultation by phone
+          </button>
+          <button type="button" class="burger-btn" data-menu-open>
+            <svg class="burger-btn__icon">
+              <use href="images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+        
       </div>
     </header>
     <section class="section section_hero">

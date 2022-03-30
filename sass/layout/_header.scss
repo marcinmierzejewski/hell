@@ -1,0 +1,23 @@
+.btn-div {
+  display: flex;
+  align-items: center;
+}
+
+.consultation-btn {
+  display: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 15px 5px;
+  color: $color-accent;
+  background-color: transparent;
+  border: 2px solid $color-accent;
+  margin-right: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    
+  }
+}  
