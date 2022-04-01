@@ -5,6 +5,12 @@
   line-height: 0;
   fill: $color-main;
   cursor: pointer;
+  transition: fill $animation;
+  margin-left: 40px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 
   &:hover,
   &:focus {

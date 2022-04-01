@@ -15,9 +15,43 @@
   background-color: transparent;
   border: 2px solid $color-accent;
   margin-right: 40px;
+  cursor: pointer;
+  transition: color $animation, background-color $animation;
+
+  &:hover,
+  &:focus {
+    color: $color-second;
+    background-color: $color-accent;
+  }
 
   @media screen and (min-width: 768px) {
-    display: block;
-    
+    display: block;    
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;    
   }
 }  
+
+.nav {
+  display: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.214;
+  text-transform: uppercase;
+  color: $color-grey;
+
+  @media screen and (min-width: 1280px) {
+    display: block;    
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}

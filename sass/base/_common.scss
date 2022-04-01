@@ -30,11 +30,11 @@ figure {
 
 .link {
   text-decoration: none;
-  // transition: color $animation;
+  transition: color $animation;
   color: inherit;
 
   &:hover,
   &:focus {
-    // color: $color-decoration;
+    color: $color-accent;
   }
 }
