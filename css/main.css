@@ -64,17 +64,56 @@ figure {
 
 .section_hero {
   padding-bottom: 0;
+  background-size: 208px 178px;
+  background-repeat: no-repeat;
+  background-image: url("../images/header/hero-mobile.png");
+  background-position: 50% 310px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section_hero {
+    background-size: 375px 320px;
+    background-image: url("../images/header/hero-tablet.png");
+    background-position: 85% 30%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section_hero {
+    background-size: 841px 718px;
+    background-image: url("../images/header/hero-desktop.png");
+    background-position: right 50%;
+  }
+}
+
+.section_problems {
+  background-image: linear-gradient(to bottom, #3D3D3D 78%, #FFFFFF 78%);
+}
+
+@media screen and (min-width: 768px) {
+  .section_problems {
+    background-image: linear-gradient(to bottom, #3D3D3D 69%, #FFFFFF 69%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section_problems {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #3D3D3D 78%, #FFFFFF 78%), url("../images/problems-bg.png");
+    background-position: right top;
+  }
 }
 
 .container {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   padding: 0 20px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -87,6 +126,7 @@ figure {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+    padding: 0 20px;
   }
 }
 
@@ -138,7 +178,6 @@ figure {
   color: #FF6B09;
   background-color: transparent;
   border: 2px solid #FF6B09;
-  margin-right: 40px;
   cursor: pointer;
   transition: color 250ms linear, background-color 250ms linear;
 }
@@ -201,7 +240,7 @@ figure {
   line-height: 1.3;
   letter-spacing: 0.03em;
   margin-bottom: 40px;
-  width: 330px;
+  max-width: 330px;
 }
 
 @media screen and (min-width: 768px) {
@@ -215,7 +254,7 @@ figure {
   .hero__title {
     font-size: 58px;
     line-height: 1.293;
-    width: 550px;
+    max-width: 550px;
   }
 }
 
@@ -251,7 +290,7 @@ figure {
   background-color: #FF6B09;
   border: none;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 234px;
   border: 2px solid #FF6B09;
   transition: color 250ms linear, background-color 250ms linear;
 }
@@ -265,6 +304,7 @@ figure {
 @media screen and (min-width: 768px) {
   .hero__btn {
     width: 260px;
+    margin-bottom: 50px;
   }
 }
 
@@ -274,13 +314,9 @@ figure {
   }
 }
 
-.hero__right {
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 1280px) {
-  .hero__right {
-    margin: 0;
+  .hero__left {
+    margin-bottom: 200px;
   }
 }
 
@@ -321,6 +357,7 @@ figure {
   font-size: 14px;
   line-height: 1.642;
   letter-spacing: 0.08em;
+  color: #111518;
 }
 
 @media screen and (min-width: 1280px) {
@@ -346,6 +383,141 @@ figure {
   .about__icon {
     width: 100px;
     height: 102px;
+  }
+}
+
+.problems-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .problems-title {
+    width: 425px;
+    font-size: 24px;
+    line-height: 1.292;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .problems-title {
+    width: 800px;
+    font-size: 46px;
+    line-height: 1.304;
+  }
+}
+
+.problems-title_accent {
+  color: #FF6B09;
+}
+
+.problems {
+  background-color: #FFFFFF;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .problems {
+    padding-top: 34px;
+    padding-left: 96px;
+    padding-right: 135px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .problems {
+    padding-top: 80px;
+    padding-left: 114px;
+    padding-right: 135px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .problems__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .problems__list {
+    padding-bottom: 50px;
+  }
+}
+
+.problems__item {
+  width: 180px;
+}
+
+.problems__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1280px) {
+  .problems__item {
+    margin-bottom: 0;
+    margin-right: 0px;
+    width: 300px;
+  }
+}
+
+.problems__numb {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: #FF6B09;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .problems__numb {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.problems__numb:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.problems__numb::before {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 20px;
+  background-color: #FF6B09;
+  margin-right: 10px;
+}
+
+.problems__paragraf {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.08em;
+  color: #111518;
+}
+
+@media screen and (min-width: 768px) {
+  .problems__paragraf {
+    line-height: 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .problems__paragraf {
+    font-size: 20px;
+    line-height: 2;
   }
 }
 /*# sourceMappingURL=main.css.map */

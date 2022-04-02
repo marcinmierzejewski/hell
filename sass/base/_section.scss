@@ -15,9 +15,57 @@
   &_header {
     padding-top: 35px;
     padding-bottom: 0;
+    
   }
 
   &_hero {
     padding-bottom: 0;
+    background-size: 208px 178px;
+    background-repeat: no-repeat;
+    background-image: url("../images/header/hero-mobile.png");
+    background-position: 50% 310px;   
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      background-size: 375px 320px;
+      background-image: url("../images/header/hero-tablet.png");
+      background-position: 85% 30%;   
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-size: 841px 718px;
+      background-image: url("../images/header/hero-desktop.png");
+      background-position: right 50%;   
+    }
+  }
+
+  &_problems {
+    background-image: linear-gradient(
+      to bottom,
+      $color-main 78%,
+      $color-second 78%,
+    );
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+      to bottom,
+      $color-main 69%,
+      $color-second 69%,
+    );
+           
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-repeat: no-repeat;
+      background-image: linear-gradient(
+      to bottom,
+      $color-main 78%,
+      $color-second 78%,
+      ),
+      url("../images/problems-bg.png");
+
+    
+      background-position: right top;  
+    }
   }
 }
