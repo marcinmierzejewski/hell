@@ -2,8 +2,22 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
   &_header {
     padding-top: 35px;
+    padding-bottom: 0;
+  }
+
+  &_hero {
     padding-bottom: 0;
   }
 }
