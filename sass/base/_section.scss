@@ -39,7 +39,8 @@
     }
   }
 
-  &_problems {
+  &_problems {    
+    padding-bottom: 0;
     background-image: linear-gradient(
       to bottom,
       $color-main 78%,
@@ -57,15 +58,12 @@
 
     @media screen and (min-width: 1280px) {
       background-repeat: no-repeat;
-      background-image: linear-gradient(
-      to bottom,
-      $color-main 78%,
-      $color-second 78%,
-      ),
-      url("../images/problems-bg.png");
-
-    
-      background-position: right top;  
+      background-image: url("../images/problems-bg.png"),
+        linear-gradient(
+        to bottom,
+        $color-text 78%,
+        $color-second 78%);    
+      background-position: right 54%;  
     }
   }
 }
