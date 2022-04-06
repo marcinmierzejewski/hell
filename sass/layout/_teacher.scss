@@ -1,0 +1,55 @@
+.teacher-left {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.teacher-left__wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 243px;
+  height: 305px;
+}
+
+.teacher {
+
+
+  &__title {    
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.08em;
+  color: $color-text;
+  border-bottom: 1px solid $color-grey;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  }
+
+  &__list {
+    margin-top: 15px;    
+    padding-left: 30px;
+  }
+
+  &__item {
+    list-style-image: url("../images/teacher/point.svg");
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__paragraf {
+    font-size: 13px;
+    line-height: 1.185;
+    letter-spacing: 0.06em;
+    color: $color-text;
+    width: 280px;
+
+    // &::before {
+    //   content: "";
+    //   width: 16px;
+    //   height: 13px;     
+    //   background-image: url("../images/teacher/point.svg");
+    //   background-size: 16px 13px;
+    //   background-position: 50% 50%;
+    // }
+  }
+}

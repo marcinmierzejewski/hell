@@ -11,6 +11,11 @@
     text-align: left; 
     font-size: 26px;   
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    margin-bottom: 100px;   
+  }
 }
 
 .program {
@@ -36,7 +41,7 @@
       margin-left: 0;
       padding-left: 0; 
       border-left: none;
-      width: 170px;
+      width: 200px;
     }
 
     &:not(:last-child) {
@@ -53,8 +58,17 @@
     color: $color-second;
     position: relative;
 
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 0.93;  
+    }
+
     &:not(:last-child) {
       margin-bottom: 15px;
+      
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 25px;
+      }
     }    
 
     &::before {
@@ -133,5 +147,11 @@
     opacity: 0.5;
     margin-bottom: 20px;
 
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      line-height: 1.56;
+      width: 200px;
+      margin-bottom: 25px;
+    }
   }
 }
