@@ -717,6 +717,16 @@ figure {
   }
 }
 
+.program {
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .program {
+    margin-left: 0;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .program {
     display: flex;
@@ -1012,16 +1022,66 @@ figure {
   }
 }
 
+.teacher-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.30;
+  letter-spacing: 0.03em;
+  color: #111518;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher-title {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-wrapper {
+    display: flex;
+  }
+}
+
 .teacher-left {
   margin: 0 auto;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .teacher-left {
+    margin: 0;
+  }
+}
+
 .teacher-left__wrapper {
   margin: 0 auto;
-  text-align: center;
   width: 243px;
   height: 305px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher-left__wrapper {
+    width: 530px;
+    height: 667px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teacher {
+    margin-left: 30px;
+  }
 }
 
 .teacher__title {
@@ -1035,9 +1095,27 @@ figure {
   padding-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .teacher__title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher__title {
+    font-size: 30px;
+  }
+}
+
 .teacher__list {
   margin-top: 15px;
   padding-left: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher__list {
+    width: 550px;
+  }
 }
 
 .teacher__item {
@@ -1053,6 +1131,32 @@ figure {
   line-height: 1.185;
   letter-spacing: 0.06em;
   color: #111518;
-  width: 280px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .teacher__paragraf {
+    font-size: 16px;
+    width: calc(100% - 50px);
+  }
+}
+
+.teacher__bottom-paragraf {
+  color: #B9B9B9;
+  font-size: 12px;
+  line-height: 1.67;
+}
+
+@media screen and (min-width: 768px) {
+  .teacher__bottom-paragraf {
+    font-size: 10px;
+    line-height: 2.8;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teacher__bottom-paragraf {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
